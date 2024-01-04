@@ -71,3 +71,194 @@ $(document).ready(function () {
         }
     });
 });
+
+
+
+
+
+
+
+
+// 1 project code
+document.getElementById("opanarrow1").onclick = () => {
+
+    document.getElementById("imginfo").style.right = "0px";
+
+    document.getElementById("closecross1").style.opacity = "1";
+
+    document.getElementById("opanarrow1").style.opacity = "0";
+
+
+}
+
+document.getElementById("closecross1").onclick = () => {
+
+    document.getElementById("imginfo").style.right = "-90%";
+
+    document.getElementById("closecross1").style.opacity = "0";
+
+    document.getElementById("opanarrow1").style.opacity = "1";
+}
+
+
+
+// 2 project code
+document.getElementById("opanarrow2").onclick = () => {
+
+    document.getElementById("imginfo2").style.right = "0px";
+
+    document.getElementById("closecross2").style.opacity = "1";
+
+    document.getElementById("opanarrow2").style.opacity = "0";
+
+
+}
+
+document.getElementById("closecross2").onclick = () => {
+
+    document.getElementById("imginfo2").style.right = "-90%";
+
+    document.getElementById("closecross2").style.opacity = "0";
+
+    document.getElementById("opanarrow2").style.opacity = "1";
+}
+
+
+
+// 3 project code
+document.getElementById("opanarrow3").onclick = () => {
+
+    document.getElementById("imginfo3").style.right = "0px";
+
+    document.getElementById("closecross3").style.opacity = "1";
+
+    document.getElementById("opanarrow3").style.opacity = "0";
+
+
+}
+
+document.getElementById("closecross3").onclick = () => {
+
+    document.getElementById("imginfo3").style.right = "-90%";
+
+    document.getElementById("closecross3").style.opacity = "0";
+
+    document.getElementById("opanarrow3").style.opacity = "1";
+}
+
+
+
+
+
+// 4 project code
+document.getElementById("opanarrow4").onclick = () => {
+
+    document.getElementById("imginfo4").style.right = "0px";
+
+    document.getElementById("closecross4").style.opacity = "1";
+
+    document.getElementById("opanarrow4").style.opacity = "0";
+
+
+}
+
+document.getElementById("closecross4").onclick = () => {
+
+    document.getElementById("imginfo4").style.right = "-90%";
+
+    document.getElementById("closecross4").style.opacity = "0";
+
+    document.getElementById("opanarrow4").style.opacity = "1";
+}
+
+
+
+
+// 5 project code
+document.getElementById("opanarrow5").onclick = () => {
+
+    document.getElementById("imginfo5").style.right = "0px";
+
+    document.getElementById("closecross5").style.opacity = "1";
+
+    document.getElementById("opanarrow5").style.opacity = "0";
+
+
+}
+
+document.getElementById("closecross5").onclick = () => {
+
+    document.getElementById("imginfo5").style.right = "-90%";
+
+    document.getElementById("closecross5").style.opacity = "0";
+
+    document.getElementById("opanarrow5").style.opacity = "1";
+}
+
+
+
+
+
+
+document.getElementById("opanarrow6").onclick = () => {
+
+    document.getElementById("imginfo6").style.right = "0px";
+
+    document.getElementById("closecross6").style.opacity = "1";
+
+    document.getElementById("opanarrow6").style.opacity = "0";
+
+
+}
+
+document.getElementById("closecross6").onclick = () => {
+
+    document.getElementById("imginfo6").style.right = "-90%";
+
+    document.getElementById("closecross6").style.opacity = "0";
+
+    document.getElementById("opanarrow6").style.opacity = "1";
+}
+
+
+
+
+
+let sections = document.querySelectorAll('section');
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let hight = sec.offsetHeight;
+
+        if (top >= offset && top < offset + hight) {
+            sec.classList.add('show-animate');
+        }
+        else {
+            sec.classList.remove('show-animate');
+
+        }
+
+    })
+}
+
+
+
+
+
+setTimeout(() => {
+    document.getElementById("sidebarmenu").style.left = "20px";
+}, 2000)
+
+
+
+document.getElementById("se-opan-btn").onclick = () => {
+    let menu = document.getElementById("sidebarmenu");
+    menu.style.left = "20px";
+}
+
+document.getElementById("closebtn").onclick = () => {
+    let menu = document.getElementById("sidebarmenu");
+    menu.style.left = "-2000px";
+}

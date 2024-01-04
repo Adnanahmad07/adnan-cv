@@ -1,0 +1,190 @@
+.social-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
+    z-index: 100;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.cssbuttons-io-button {
+    background: #000000;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #000000;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #000000;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* links  */
+
+.sidedev {
+    width: 40%;
+    height: 400px;
+    position: fixed;
+    left: -2000px;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.368);
+    transition: 0.7s;
+    z-index: 200;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.2));
+    backdrop-filter: blur(10px);
+
+
+
+}
+
+.sidedev div button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 6px;
+    background: transparent;
+
+
+
+}
+
+
+.sidedev div button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-family: arial;
+    display: flex;
+    align-items: center;
+    vertical-align: bottom;
+
+}
+
+.sidedev div button a img {
+    margin-right: 15px;
+}
+
+
+.closebtn {
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+
+
+}
+
+.closebtn:hover {
+    background-color: transparent;
+    color: rgb(239, 0, 0);
+
+}
+
+.sidedev div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: space-around;
+
+}
+
+.email {
+    margin-top: 1rem;
+    border: 1px solid #4285f4;
+
+}
+
+.email:hover {
+    background-color: #4285f4;
+
+}
+
+
+.Github {
+    border: 1px solid #f4b400;
+}
+
+.Github:hover {
+    background-color: #f4b400;
+}
+
+.Instagram {
+    border: 1px solid #db4437;
+}
+
+.Instagram:hover {
+    background-color: #db4437;
+}
+
+
+.WhatsApp {
+    border: 1px solid #0f9d58;
+}
+
+.WhatsApp:hover {
+    background-color: #0f9d58;
+}
