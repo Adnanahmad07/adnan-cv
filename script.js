@@ -226,6 +226,10 @@ document.getElementById("closecross6").onclick = () => {
 
 let sections = document.querySelectorAll('section');
 
+
+console.log(sections);
+console.log(typeof sections);
+
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = window.scrollY;
@@ -249,7 +253,7 @@ window.onscroll = () => {
 
 setTimeout(() => {
     document.getElementById("sidebarmenu").style.left = "20px";
-}, 2000)
+}, 4000)
 
 
 
