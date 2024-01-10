@@ -35,18 +35,13 @@ $(document).ready(function () {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Coder", "Developer", "Designer", "Freelancer"],
+        strings: ["Coder", "Developer", "Programmer", "UI Desing"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Developer", "Coder", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+  
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -266,3 +261,46 @@ document.getElementById("closebtn").onclick = () => {
     let menu = document.getElementById("sidebarmenu");
     menu.style.left = "-2000px";
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// background change (a image slidder)
+
+var f = 0;
+var slidImage = [];
+var slidTime = 3000;
+
+
+slidImage[0] = 'slid/1.jpg';
+slidImage[1] = 'slid/2.jpg';
+slidImage[2] = 'slid/3.jpg';
+slidImage[3] = 'slid/4.jpg';
+
+
+function Changebackground() {
+    document.imgslide.src = slidImage[f];
+
+    if (f < slidImage.length - 1) {
+        f++;
+    } else {
+        f = 0;
+    }
+
+    setTimeout(Changebackground, slidTime);
+
+}
+window.onload = Changebackground;

@@ -237,9 +237,21 @@ section .title::after {
 
 /* home section styling */
 
+
+.home .max-width img {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: url("imagase/adnan.jpg") no-repeat center;
+    z-index: -12;
+    object-fit: cover;
+    object-position: center;
+
+}
+
 .home {
     display: flex;
-    background: url("imagase/adnan.jpg") no-repeat center;
+    /* background: url("imagase/adnan.jpg") no-repeat center; */
     height: 100vh;
     color: #fff;
     min-height: 500px;
