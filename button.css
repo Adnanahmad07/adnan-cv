@@ -132,7 +132,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 10px;
     font-size: 22px;
 
 
@@ -143,6 +143,35 @@
     color: rgb(239, 0, 0);
 
 }
+
+.closebtn div {
+    text-wrap: nowrap;
+    position: absolute;
+    right: -34px;
+    top: -33px;
+    pointer-events: none;
+    color: rgb(255, 255, 255);
+    background: black;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.closebtn:hover.closebtn div {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
 
 .sidedev div {
     display: flex;

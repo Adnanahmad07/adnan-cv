@@ -22,6 +22,7 @@ $(document).ready(function () {
         $('html').css("scrollBehavior", "auto");
     });
 
+
     $('.navbar .menu li a').click(function () {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
@@ -41,7 +42,17 @@ $(document).ready(function () {
         loop: true
     });
 
-  
+    var typed = new Typed(".typing-2", {
+        strings: ["Developer", "Coder", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+
+
+
+
 
     // owl carousel script
     $('.carousel').owlCarousel({
@@ -280,15 +291,16 @@ document.getElementById("closebtn").onclick = () => {
 
 // background change (a image slidder)
 
+
 var f = 0;
 var slidImage = [];
 var slidTime = 3000;
 
 
-slidImage[0] = 'slid/1.jpg';
+slidImage[0] = 'slid/4.jpg';
 slidImage[1] = 'slid/2.jpg';
 slidImage[2] = 'slid/3.jpg';
-slidImage[3] = 'slid/4.jpg';
+slidImage[3] = 'slid/1.jpg';
 
 
 function Changebackground() {
@@ -304,3 +316,63 @@ function Changebackground() {
 
 }
 window.onload = Changebackground;
+
+
+
+
+// auto mate see description 
+
+let cal = document.getElementById("calculator");
+let oncalculator = false;
+cal.addEventListener('mouseenter', () => {
+    if (!oncalculator) {
+        document.getElementById("imginfo").style.right = "0px";
+
+        document.getElementById("closecross1").style.opacity = "1";
+
+        document.getElementById("opanarrow1").style.opacity = "0";
+
+        oncalculator = true;
+    }
+})
+
+
+
+
+
+let dashbord = document.getElementById("deashbord");
+let ondeashbord = false;
+
+dashbord.addEventListener('mouseenter', () => {
+    if (!ondeashbord) {
+        document.getElementById("imginfo2").style.right = "0px";
+
+        document.getElementById("closecross2").style.opacity = "1";
+
+        document.getElementById("opanarrow2").style.opacity = "0";
+
+        ondeashbord = true;
+    }
+})
+
+
+
+
+
+let freshmeal = document.getElementById("freshmeal");
+let onfreshmeal = false;
+
+freshmeal.addEventListener('mouseenter', () => {
+    if (!onfreshmeal) {
+        document.getElementById("imginfo3").style.right = "0px";
+
+        document.getElementById("closecross3").style.opacity = "1";
+
+        document.getElementById("opanarrow3").style.opacity = "0";
+
+        onfreshmeal = true;
+    }
+})
+
+
+
