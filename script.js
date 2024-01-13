@@ -259,7 +259,7 @@ window.onscroll = () => {
 
 setTimeout(() => {
     document.getElementById("sidebarmenu").style.left = "20px";
-}, 4000)
+}, 7000)
 
 
 
@@ -294,7 +294,7 @@ document.getElementById("closebtn").onclick = () => {
 
 var f = 0;
 var slidImage = [];
-var slidTime = 3000;
+var slidTime = 4000;
 
 
 slidImage[0] = 'slid/4.jpg';

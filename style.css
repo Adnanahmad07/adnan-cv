@@ -8,6 +8,11 @@
     text-decoration: none;
 }
 
+
+.alert {
+    display: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -287,7 +292,7 @@ section .title::after {
 }
 
 .home .home-content .text-3 span {
-    color: rgb(11, 159, 3);
+    color: rgb(255, 255, 255);
     font-weight: 500;
 }
 
@@ -330,6 +335,13 @@ section .title::after {
     color: rgb(11, 159, 3);
     background: none;
 }
+
+.home-content button {
+    background: transparent;
+}
+
+
+
 
 
 
@@ -1164,6 +1176,11 @@ footer span a:hover {
     .services .serv-content .card {
         width: 100%;
     }
+
+    .alert {
+        display: block;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -1205,6 +1222,12 @@ footer span a:hover {
         font-size: 23px;
         line-height: 38px;
     }
+
+    .alert {
+        display: block;
+    }
+
+
 }
 
 
